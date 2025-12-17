@@ -1,25 +1,7 @@
 import React, { Component } from "react";
 
-import {
-  FiDownload,
-  FiChevronRight,
-  FiCode,
-  FiCoffee,
-  FiZap,
-  FiMail,
-  FiMapPin,
-  FiCalendar,
-} from "react-icons/fi";
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaExternalLinkAlt,
-} from "react-icons/fa";
+import {FiDownload,FiChevronRight,FiCode,FiCoffee,FiZap,FiCalendar,} from "react-icons/fi";
+import {FaReact,FaHtml5,FaCss3Alt,FaJs,FaGithub,FaLinkedin,} from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import sufyanImage from "./suf port.png";
 import "./Hero.css";
@@ -83,7 +65,7 @@ export default class Hero extends Component {
         { icon: <FaCss3Alt />, name: "CSS3", color: "#1572B6" },
         { icon: <FaJs />, name: "JavaScript", color: "#F7DF1E" },
         { icon: <FaReact />, name: "React", color: "#61DAFB" },
-        { icon: <SiNextdotjs />, name: "Next.js", color: "#000000" },
+        { icon: <SiNextdotjs />, name: "Node.js", color: "#000000" },
         { icon: <SiTailwindcss />, name: "Tailwind", color: "#06B6D4" },
         { icon: <SiTypescript />, name: "TypeScript", color: "#3178C6" },
       ],
@@ -122,25 +104,16 @@ export default class Hero extends Component {
               </h1>
 
               <div className="hero-buttons">
-                <button className="btn btn-primary">
-                  <FiDownload className="btn-icon" />
-                  <a
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none",color: 'white' }}
-                    href="https://drive.google.com/file/d/1L3cRwb5b_mG56scwQPb4-337ZZXg6sbY/view"
-                    target="blank"
-                  >
-                    Portfolio
-                  </a>
-                </button>
-
-                <button
-                  className="btn btn-secondary"
-                  onClick={() => (window.location.href = "/contact")}
+                <a
+                  className="btn btn-primary"
+                  href="https://drive.google.com/file/d/1L3cRwb5b_mG56scwQPb4-337ZZXg6sbY/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
                 >
-                  <span>Contact me</span>
-                  <FiChevronRight className="btn-icon" />
-                </button>
+                  <FiDownload className="btn-icon" />
+                  <span>Portfolio</span>
+                </a>
               </div>
               {/* Social Links */}
               <div className="hero-social">
@@ -213,16 +186,6 @@ export default class Hero extends Component {
         <section id="about" className="about-section">
           <div className="container">
             <div className="about-container">
-              <div className="about-image">
-                <div className="about-img-wrapper">
-                  <img
-                    src={sufyanImage}
-                    alt="Sufyan - About"
-                    className="about-img"
-                  />
-                </div>
-              </div>
-
               <div className="about-content">
                 <h2 className="about-title">
                   About <span className="about-highlight">Me</span>
@@ -263,7 +226,28 @@ export default class Hero extends Component {
               </div>
             </div>
           </div>
+          
+        <div className="contact-container" id="contact">
+          <h1>Contact Me</h1>
+          <div className="contact-info">
+            <p>
+              <strong>Name:</strong> Sufan Bhatti
+            </p>
+            <p>
+              <strong>Email:</strong>{" "}
+              <a href="sb07911786@gmail.com">sb07911786@gmail.com</a>
+            </p>
+            <p>
+              <strong>Phone:</strong> +92-3207906250
+            </p>
+            <p>
+              <strong>Location:</strong> Lahore, Pakistan
+            </p>
+          </div>
+        </div>
         </section>
+
+        
 
         {/* Footer Section */}
         <footer className="footer">
