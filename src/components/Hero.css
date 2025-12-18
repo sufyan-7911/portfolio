@@ -1555,47 +1555,8 @@ html {
   }
 }
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-  .about-section {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  }
-  
-  .about-content,
-  .contact-info {
-    background: #1e293b;
-    border-color: #334155;
-  }
-  
-  .about-title,
-  .skills-title,
-  .contact-container h1,
-  .contact-info strong {
-    color: #f1f5f9;
-  }
-  
-  .about-text p,
-  .contact-info p {
-    color: #cbd5e1;
-  }
-  
-  .skill-item {
-    background: #1e293b;
-    border-color: #334155;
-  }
-  
-  .skill-item span {
-    color: #cbd5e1;
-  }
-  
-  .skill-item:hover {
-    border-color: #3b82f6;
-  }
-  
-  .contact-info p {
-    border-bottom-color: #334155;
-  }
-}
+
+
 
 /* Smooth Entrance Animations */
 @keyframes slideUp {
